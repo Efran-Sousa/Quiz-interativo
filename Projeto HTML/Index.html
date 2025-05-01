@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz para programadores</title>
+    <meta name="description" content="Quiz para programadores. Responda preguntas sobre programacão e descubra seu nível de conhecimento.">
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       <header>
+        <h1>Quiz interativo para programadores</h1>
+        <p>Testes seus conhecimentos em programação e veja qual pontuação você consegue fazer!</p>
+       </header>
+       <main>
+        <!-- Introdução -->
+        <section>
+            <h2>Sobre esse quiz</h2>
+            <p>Responda as perguntas abaixo e descubra seu nível de <em> programação</em>.</p>
+            <p>Use todos os seus <strong>conhecimentos em programação</strong> para responde-lo corretamente</p>
+            <p>Serão utilizados conceitos básicos de programacão e de ferramentas de desesnvolvimento web, como <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets"> CSS</abbr>, além de lógica de programação</p>
+        </section>
+        <!-- Perguntas 1: MUltipla escolha -->
+        <section>
+            <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web</h2>
+            <form>
+            <input type="radio" id="p1a" name="pergunta1" value="Python">
+            <label for="p1a">Python</label><br>
+            <input type="radio" id="p1b" name="pergunta1" value="HTML">
+            <label for="p1b">HTML</label><br>
+            <input type="radio" id="p1c" name="pergunta1" value="Javascript">
+            <label for="p1c">Javascript</label><br>
+            <input type="radio" id="p1d" name="pergunta1" value="Ruby">
+            <label for="p1d">Ruby</label><br>
+            </form>
+        </section>
+        <!-- Perguntas 2: Texto -->
+        <section>
+            <h2>Pergunta 2: Na URL https://google.com o trecho "google.com" é o ____</h2>
+            <form>
+                <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta aqui">
+            </form>
+        </section>
+        <!-- Perguntas 3: Senha -->
+         <section>
+            <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+            <form>
+                <input type="password" id="p3" name="pergunta3" placeholder="Digite sua senha aqui">
+            </form>
+         </section>
+         <!-- Perguntas 4: Data -->
+          <section>
+            <h2>Pergunta 4: Em que ano HTML lançou a sua primeira versão?</h2>
+            <form>
+                <input type="date" id="p4" name="pergunta4">
+            </form>
+          </section>
+          <!-- Perguntas 5: Seleção MUltipla -->
+           <section>
+           <h2>Pergunta 5: Quais dessas tecnologias são consideradas linguagens de programção?</h2>
+           <form>  
+                <input type="checkbox" id="p5a" name="pergunta5" value="Javascript">
+                <label for="p5a">Javascript</label><br>
+                <input type="checkbox" id="p5b" name="pergunta5" value="HTML">
+                <label for="p5b">HMTL</label><br>
+                <input type="checkbox" id="p5c" name="pergunta5" value="Java">
+                <label for="p5c">Java</label><br>
+                <input type="checkbox" id="p5d" name="pergunta5" value="CSS">
+                <label for="p5d">CSS</label><br>
+           </form>
+           </section>
+              <!-- Perguntas 6: upload de arquivo-->
+            <section>
+                <h2>Perguntas 6: Faça o upload de um arquivo condendo código HTML</h2>
+                <form>
+                    <input type="file" id="p6" name="pergunta6" accept=".html, .htm">
+                </form>
+            </section>
+            <!-- Perguntas 7: menu suspenso -->
+             <section>
+                <h2>Pegunta 7: Selecione o atributo do input que define o seu tipo:</h2>
+                <Form>
+                    <select id="p7" name="pergunta7">
+                        <option value="type">type</option>
+                        <option value="input">input</option>
+                        <option value="form">form</option>
+                        <option value="select">select</option>
+                    </select>
+                </Form>
+             </section>
+            <!-- Perguntas 8: Imagem -->
+             <section>
+                <h2>Pergunta 8: Qual limguagem de programacão é representada pela logotipo a baixo?</h2>
+                <figure>
+                    <img src="Imagem-Javascript.avif" alt="Logotipo do Javascript"><br>
+                    <figcaption>Logotipo de uma linguagem de programação</figcaption>
+                </figure>
+                <form>
+                    <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta aqui">
+                </form>
+             </section>
+             <!-- Tabela de Pontuação -->
+              <section>
+                <h2>Tabela de pontuaçaõ</h2>
+                <table border="1">
+                    <thead>
+
+                    </thead>
+                    <tr>
+                        <th>Intervalo de Pontuação</th>
+                        <th>Avaliação</th>
+                        <tbody>
+                        <tr>
+                            <td>0-2</td>
+                            <td>Não desista! Você pode melhorar!</td>
+                        </tr>
+                        <tr>
+                            <td>3-4</td>
+                            <td>Você ainda precisa melhorar</td>
+                        </tr>
+                        <tr>
+                            <td>5-6</td>
+                            <td>Bom trabalho! Você está indo bem!</td>
+                        </tr>
+                        <tr>
+                            <td>7-8</td>
+                            <td>Parabéns! Você é um programador bem informado!</td>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Obrigado por participar do nosso quiz!</td>
+                            </tr>
+                        </tfoot>
+                </table>
+              </section>
+              <!-- Lista de respostas -->
+               <section>
+                <h2>Verifique suas respostas</h2>
+                <details>
+                    <summary>Clique aqui para visualizar as respostas</summary>
+                <ol>
+                    <li>HTML</li>
+                    <li>Domínio</li>
+                    <li>Efran@21121995</li>
+                    <li>1991</li>
+                    <li>Javascript, Java</li>
+                    <li>Arquivo HTML</li>
+                    <li>type</li>
+                    <li>Javascript</li>
+                </ol>
+                </details>
+               </section>
+               <!-- Formulário de feedback -->
+                <section>
+                <h2>Deixe seu feedback</h2>
+                <form>
+                    <fieldset>
+                        <legend>Informações de contato</legend>
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email aqui"><br>
+                <label for="comentários">Comentários:</label><br>
+                <textarea id="comentários" name="comentários" rows="4" cols="50" placeholder="Digite seu comentário aqui"></textarea><br>
+                    <button onclick="alert('FEEDBACK EVIADO')">Envie o feedback</button>
+                    </fieldset>
+                </form>
+                </section>
+       </main> 
+       <footer>
+        <p class="paragrafo-footer">&copy; 2025 Quiz para programadores. Todos os direitos reservados.</p>
+        <p class="paragrafo-footer">Desenvolvido por Efran</p>
+        <p class="paragrafo-footer">Para conhecer mais sobre mim <a href="sobremim.html" target="_blank">clique aqui</a></p>
+       </footer>
+    </body>
+</html>
